@@ -7,7 +7,7 @@ import random
 # Run "ls /dev/cu*" to find the port, then paste it here
 serial_path = "/dev/cu.usbmodem14101"
 
-demo_mode = True # True to generate fake "arduino" data
+demo_mode = False # Set to True to generate fake "arduino" data
 if not demo_mode:
     # Open the serial channel
     ser = serial.Serial(serial_path)
